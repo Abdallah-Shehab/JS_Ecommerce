@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Us</title>
+    <link rel="icon" href="./images/t-solid.svg" />
+
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="./js/JQuery.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <script src="./js/smooth.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#mynav-container").load("nav.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="mynav-container"></div>
+    <div id="contact" class="container-fluid contact">
+      <div class="row justify-content-center align-items-center just-space">
+        <div class="col" style="width: 100%; height: 80px"></div>
+      </div>
+
+      <div
+        class="row-cols-auto justify-content-center align-items-center g-2 text-center aboutusTitle"
+      >
+        <div class="info">
+          <span>How to reach us </span>
+          <p>Let’s Get in Touch</p>
+        </div>
+      </div>
+      <br />
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col"></div>
+
+        <div class="col-md-4 aboutusTitle">
+          <div class="info">
+            <p
+              id="Discription"
+              class="w-sm-auto text-start"
+              style="color: white"
+            >
+              West is not just about graphic design; it's more than that. We
+              offer integral communication services, and we're responsible for
+              our process and results. <br />
+              We thank each client and their projects.
+            </p>
+          </div>
+          <div class="row g-0 m-0">
+            <!-- ------------------------ first line ---------------- -->
+            <div class="col-lg-5">
+              <div class="info">
+                <span>Our Address </span>
+                <p
+                  id="Discription"
+                  class="w-sm-auto text-start"
+                  style="color: white; font-size: 15px"
+                >
+                  123 Stree New York City , United States Of America.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+              <div class="info">
+                <span>Our Phone </span>
+                <p
+                  id="Discription"
+                  class="w-sm-auto text-start"
+                  style="color: white; font-size: 15px"
+                >
+                  Office Telephone : 001 01085379709<br />
+                  Mobile : 001 63165370895
+                </p>
+              </div>
+            </div>
+
+            <!-- ------------------------ second line ---------------- -->
+
+            <div class="col-lg-5">
+              <div class="info">
+                <span> Our Email</span>
+                <p
+                  id="Discription"
+                  class="w-sm-auto text-start"
+                  style="color: white; font-size: 15px"
+                >
+                  Our Email Main Email : admin@website.com <br />
+                  Inquiries : email@website.com
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+              <div class="info">
+                <span> Our Support </span>
+                <p
+                  id="Discription"
+                  class="w-sm-auto text-start"
+                  style="color: white; font-size: 15px"
+                >
+                  Main Support : info@website.com <br />
+                  Sales : support@website
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">Column</div>
+      </div>
+
+      <!-- ------------------------ contact details ---------------- -->
+      <div class="row justify-content-center align-items-center g-2 just-space">
+        <div class="col" style="width: 100%; height: 80px"></div>
+      </div>
+      <div
+        class="row justify-content-center align-items-center g-2 form-inputs"
+      >
+        <div class="col"></div>
+        <div class="col-md-5">
+          <div class="form" id="contactForm">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name:"
+              required
+            />
+            <div id="nameError" class="error-message"></div>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="subject:"
+              required
+            />
+            <div id="subjectError" class="error-message"></div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email:"
+              required
+            />
+            <div id="emailError" class="error-message"></div>
+            <!-- <input type="text" placeholder="First Name:" />
+            <input type="text" placeholder="Last Name:" />
+            <input type="text" placeholder="Email:" />
+            <input type="text" placeholder="Phone:" /> -->
+            <textarea
+              id="message"
+              placeholder="Message:"
+              name="message"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
+            <div id="messageError" class="error-message"></div>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              onclick="validateForm()"
+            >
+              Submit
+            </button>
+          </div>
+          <div
+            id="successMessage"
+            style="display: none; color: green; margin-top: 10px"
+          >
+            Thank you for reaching out! We'll get back to you soon.
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <!-- ------------------------ End of contact details ---------------- -->
+      <div class="row justify-content-center align-items-center g-2 just-space">
+        <div class="col" style="width: 100%; height: 80px"></div>
+      </div>
+    </div>
+
+    <!-- ------------------- Contact-US  End---------------- -->
+
+    <!-- ------------------- Footer  start---------------- -->
+
+    <div class="container-fluid footer">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-3"></div>
+        <div
+          class="col-md-6 d-flex flex-column align-items-center justify-content-center mid-col"
+        >
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+          <p>© 2024 , Mady By Abdallah SHafiq</p>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+
+    <!-- ------------------- Footer  End---------------- -->
+    <script src="./js/contactVal.js"></script>
+  </body>
+</html>

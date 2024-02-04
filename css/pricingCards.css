@@ -1,0 +1,84 @@
+.inv-section .cards .card,
+.emptyCard {
+  width: 18%;
+  height: auto;
+}
+
+.inv-section .cards .card {
+  background-color: transparent;
+  margin: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px;
+  height: 80%;
+}
+.inv-section .cards .active {
+  background-color: #202020;
+}
+.inv-section .cards .card:hover {
+  background-color: #202020;
+}
+.inv-section .cards .card .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.inv-section .cards .card .price i {
+  font-size: 22px;
+}
+.inv-section .cards .card .price .money h3 {
+  color: #c32865;
+  font-size: 48px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.inv-section .cards .card .price p {
+  font-weight: lighter;
+  font-size: 12px;
+}
+.inv-section .cards .card .details li {
+  font-size: 17px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.inv-section .cards .card .details i {
+  margin-right: 5px;
+  color: yellow;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.inv-section .cards .card .btn {
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s;
+}
+.inv-section .cards .card .btn:hover {
+  background-color: #c32865;
+  border: 1px solid rgba(255, 255, 255, 0.103);
+  outline: none;
+  border: none;
+}
+/* -------------- media Query ------------------- */
+
+@media screen and (max-width: 767px) {
+  .inv-section .cards .card {
+    width: 90%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .inv-section .cards .emptyCard {
+    width: 0px;
+    height: 0px;
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "brand": "TechMaster",
+      "category": "Electronics",
+      "price": 999.99,
+      "color": "Silver",
+      "inStock": true,
+      "image": "https://i.ibb.co/GsjVRts/laptop2.png",
+      "description": "Powerful laptop with high-performance specifications for work and entertainment."
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "brand": "ElectroTech",
+      "category": "Electronics",
+      "price": 599.99,
+      "color": "Black",
+      "inStock": true,
+      "image": "https://i.ibb.co/W3cLnNK/Smartphone.png",
+      "description": "Cutting-edge smartphone with advanced features and sleek design."
+    },
+    {
+      "id": 3,
+      "name": "Mouse",
+      "brand": "TechMaster",
+      "category": "Electronics",
+      "price": 999.99,
+      "color": "Silver",
+      "inStock": true,
+      "image": "https://i.ibb.co/bPhs3Nn/mouse2.png",
+      "description": "Ergonomic and precise mouse for seamless navigation and control during your computing tasks."
+      
+    },
+    {
+      "id": 4,
+      "name": "Smart Watch",
+      "brand": "GadgetGear",
+      "category": "Wearables",
+      "price": 199.99,
+      "color": "Rose Gold",
+      "inStock": true,
+      "image": "https://i.ibb.co/FbH7Zh7/Smart-Watch.png",
+      "description": "Fashionable smartwatch with health tracking features and customizable watch faces."
+    },
+    {
+      "id": 5,
+      "name": "4K UHD Television",
+      "brand": "VisionX",
+      "category": "Electronics",
+      "price": 799.99,
+      "color": "Black",
+      "inStock": true,
+      "image": "https://i.ibb.co/Z64vL3P/tv.png",
+      "description": "Immerse yourself in stunning 4K UHD visuals with this sleek and feature-packed television."
+    },
+    {
+      "id": 6,
+      "name": "Gaming Console",
+      "brand": "GameMaster",
+      "category": "Gaming",
+      "price": 449.99,
+      "color": "Red",
+      "inStock": true,
+      "image": "https://i.ibb.co/fFRcHBy/console.png",
+      "description": "High-performance gaming console for an immersive gaming experience with realistic graphics."
+    },
+    {
+      "id": 7,
+      "name": "Digital Camera",
+      "brand": "PhotoPro",
+      "category": "Electronics",
+      "price": 349.99,
+      "color": "Silver",
+      "inStock": false,
+      "image": "https://i.ibb.co/HqQBBBz/Digital-Camera.png",
+      "description": "Capture stunning moments with this feature-packed digital camera, perfect for photography enthusiasts."
+    },
+    {
+      "id": 8,
+      "name": "Home Theater System",
+      "brand": "AudioBliss",
+      "category": "Electronics",
+      "price": 599.99,
+      "color": "Black",
+      "inStock": true,
+      "image": "https://i.ibb.co/w7yN2cN/sound-System.png",
+      "description": "Transform your living room into a cinematic experience with this high-quality home theater system."
+    },
+    {
+      "id": 9,
+      "name": "Fitness Tracker",
+      "brand": "HealthSync",
+      "category": "Wearables",
+      "price": 79.99,
+      "color": "Green",
+      "inStock": true,
+      "image": "https://i.ibb.co/RDczC2X/tracker.png",
+      "description": "Stay fit and healthy with this fitness tracker that monitors your activity, sleep, and heart rate."
+    },
+    {
+      "id": 10,
+      "name": "Tablet",
+      "brand": "TabMaster",
+      "category": "Electronics",
+      "price": 299.99,
+      "color": "Gold",
+      "inStock": true,
+      "image": "https://i.ibb.co/j6mkgpD/iad.png",
+      "description": "Portable tablet for work and entertainment on the go, featuring a high-resolution display."
+    },
+    {
+      "id": 11,
+      "name": "Smart Refrigerator",
+      "brand": "CoolTech",
+      "category": "Appliances",
+      "price": 1299.99,
+      "color": "Stainless Steel",
+      "inStock": true,
+      "image": "https://i.ibb.co/rQ2NSf6/Smart-Refrigerator.png",
+      "description": "Smart refrigerator with advanced cooling technology, spacious interior, and interactive features."
+    },
+    {
+      "id": 12,
+      "name": "Drone",
+      "brand": "FlyMaster",
+      "category": "Electronics",
+      "price": 499.99,
+      "color": "White",
+      "inStock": false,
+      "image": "https://i.ibb.co/pZS3Qxp/drone.png",
+      "description": "Explore the skies with this powerful drone equipped with a high-resolution camera."
+    },
+    {
+      "id": 13,
+      "name": "Portable Speaker",
+      "brand": "SoundWave",
+      "category": "Audio",
+      "price": 89.99,
+      "color": "Red",
+      "inStock": true,
+      "image": "https://i.ibb.co/2SgPCQy/speaker.png",
+      "description": "Compact and portable speaker for on-the-go music enjoyment with clear and rich sound."
+    },
+    {
+      "id": 14,
+      "name": "Coffee Maker",
+      "brand": "BrewMaster",
+      "category": "Appliances",
+      "price": 69.99,
+      "color": "Black",
+      "inStock": true,
+      "image": "https://i.ibb.co/Jj4DzRw/coffe.png",
+      "description": "Brew your favorite coffee at home with this easy-to-use and stylish coffee maker."
+    },
+    {
+      "id": 15,
+      "name": "Electric Scooter",
+      "brand": "EcoRide",
+      "category": "Electronics",
+      "price": 299.99,
+      "color": "Blue",
+      "inStock": true,
+      "image": "https://i.ibb.co/Dt5MGFV/scotter.png",
+      "description": "Eco-friendly electric scooter for convenient and efficient urban commuting."
+    },
+    {
+      "id": 16,
+      "name": "Security Camera System",
+      "brand": "SecureTech",
+      "category": "Security",
+      "price": 399.99,
+      "color": "Gray",
+      "inStock": true,
+      "image": "https://i.ibb.co/mBwVKFr/camerSys.png",
+      "description": "Ensure the safety of your home with this advanced security camera system with real-time monitoring."
+    },
+    {
+      "id": 17,
+      "name": "Robot Vacuum Cleaner",
+      "brand": "CleanBot",
+      "category": "Appliances",
+      "price": 199.99,
+      "color": "Silver",
+      "inStock": true,
+      "image": "https://i.ibb.co/dpkKV4q/vacum.png",
+      "description": "Efficient robot vacuum cleaner for hands-free cleaning of your living space."
+    },
+    {
+      "id": 18,
+      "name": "Wireless Keyboard and Mouse",
+      "brand": "TechGear",
+      "category": "Computers",
+      "price": 49.99,
+      "color": "Black",
+      "inStock": true,
+      "image": "https://i.ibb.co/K0nGQv2/keyboardandmouse.png",
+      "description": "Wireless keyboard and mouse combo for comfortable and hassle-free computing."
+    },
+    {
+      "id": 19,
+      "name": "Bluetooth Earbuds",
+      "brand": "AudioFlex",
+      "category": "Audio",
+      "price": 129.99,
+      "color": "Rose Gold",
+      "inStock": true,
+      "image": "https://i.ibb.co/hZtPxt6/airpods.png",
+      "description": "Wireless Bluetooth earbuds for immersive audio experience with a stylish design."
+    },
+    {
+      "id": 20,
+      "name": "Portable External Hard Drive",
+      "brand": "DataMaster",
+      "category": "Computers",
+      "price": 89.99,
+      "color": "Silver",
+      "inStock": true,
+      "image": "https://i.ibb.co/VNB1w22/hard.png",
+      "description": "Expand your storage capacity with this portable external hard drive for secure data storage."
+    },
+    {
+      "id": 21,
+      "name": "Wireless Headphones",
+      "brand": "SonicWave",
+      "category": "Electronics",
+      "price": 129.99,
+      "color": "Blue",
+      "inStock": false,
+      "image": "https://i.ibb.co/NCKnpgX/Wireless-Headphones.png",
+      "description": "Immersive wireless headphones with noise-canceling technology for a superior audio experience."
+    }
+  ]
+}

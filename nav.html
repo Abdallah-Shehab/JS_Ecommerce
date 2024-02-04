@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/t-solid.svg" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/cartDesign.css" />
+    <script src="./js/JQuery.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+
+    <script src="./js/smooth.js"></script>
+  </head>
+  <body>
+    <button
+      class="top-buuton"
+      id="btn"
+      onclick="topFunction()"
+      title="TopButton"
+    >
+      <i class="fa-solid fa-plane-up"></i>
+    </button>
+
+    <div class="cart" id="cart">
+      <button
+        type="button"
+        class="btn btn-outline btn-sm"
+        onclick="closeCart()"
+        id="closeBtn"
+      >
+        <i class="fa-regular fa-circle-xmark"></i>
+      </button>
+      <h2 style="color: white; text-align: center; margin-top: 5px">My Cart</h2>
+      <hr style="color: white; width: 90%; margin-left: 5%" />
+
+      <div class="itemsCon">
+        <ul id="cart-items"></ul>
+      </div>
+      <hr style="color: white; width: 90%; margin-left: 5%" />
+      <div class="cartBottom" id="cartBottom">
+        <p>
+          Total: $<span id="total-price">0.00</span>
+          <br />
+          <button
+            type="button"
+            class="btn btn-outline btn-sm"
+            onclick="Checkout()"
+          >
+            Check Out
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline btn-sm"
+            onclick="clearStorage()"
+          >
+            Clear
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <nav
+      class="navbar navbarTop bg-dark navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+      style="z-index: 500"
+    >
+      <div class="container-fluid">
+        <a href="./index.html" class="navbar-brand">
+          <i
+            class="fa-solid fa-shop"
+            style="color: white; font-size: 40px; margin-left: 30px"
+          >
+            <span style="color: white; font-size: 30px; margin-left: 15px"
+              >Tech-Store</span
+            ></i
+          >
+          <!-- <img class="mx-lg-5" src="./images/logo.png" alt="" /> -->
+        </a>
+
+        <div
+          class="collapse navbar-collapse justify-content-center align-items-center nav-links"
+          id="nav-links"
+        >
+          <ul class="navbar-nav mx-lg-4 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Products.html">Products</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About Us</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="./PricePage.html">Pricing Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact.html">Contact-US</a>
+            </li>
+            <li>
+              <button
+                type="button"
+                id="Cart_Button"
+                onclick="OpenCart()"
+                class="btn btn-outline-primary navbar-register-btn position-relative"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  id="badge"
+                >
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="toggle-buuton"
+          onclick="openLinks()"
+          style="background-color: black"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- End of nav -->
+    <script src="./js/main.js"></script>
+
+    <script src="./js/Cart.js"></script>
+  </body>
+</html>

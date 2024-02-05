@@ -79,6 +79,7 @@ body {
   background-color: #c32865;
   color: white;
 }
+
 @media screen and (max-width: 1030px) {
   .all-proudcts {
     display: flex;

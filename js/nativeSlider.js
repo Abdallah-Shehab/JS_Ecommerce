@@ -21,7 +21,8 @@
 
 
 // case 2
-let imgs = ["../images/store-3.jpeg", "../images/store-4.jpg", "../images/store-5.jpg"];
+// let imgs = ["../images/store-3.jpeg", "../images/store-4.jpg", "../images/store-5.jpg"];
+let imgs = ["https://i.ibb.co/258Hmnh/store-4.jpg", "https://i.ibb.co/BBwh9Q2/store-5.jpg", "https://i.ibb.co/CzrwPgf/store-3.jpg"];
 
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");

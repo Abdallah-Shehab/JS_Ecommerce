@@ -257,16 +257,16 @@ textarea {
   outline: none;
   margin: 20px;
   font-family: "Roboto", sans-serif;
-  width: 60%;
+  width: 90%;
 }
 textarea {
-  width: 80%;
   resize: none;
   list-style-type: none;
 }
 .error-message {
   color: red;
   margin-top: 5px;
+  margin-left: 20px;
 }
 .contact .form-inputs .form .btn {
   background-color: #c32865;
@@ -338,6 +338,9 @@ textarea {
 
 .top-buuton:hover {
   background-color: #55757d;
+}
+.fade {
+  transition-duration: 1s;
 }
 
 /* -------------- media Query ------------------- */

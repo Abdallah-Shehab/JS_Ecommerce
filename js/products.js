@@ -96,7 +96,7 @@ function updateDoc() {
         <h3>${products[index].name}</h3>
         <h2 class="price">${products[index].price} €</h2>
         
-        <a href="#" onclick="addToCart(${products[index].id},event)" class="buy">ADD To Cart</a>
+        <a href="#"  onclick="addToCart(${products[index].id},event)" class="buy">ADD To Cart</a>
         
       </div>
     

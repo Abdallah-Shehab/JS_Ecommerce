@@ -1,8 +1,7 @@
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let total = JSON.parse(localStorage.getItem('total')) || 0;
-
 var cartCon = document.getElementById("cart");
-var cartBadge = document.getElementById("badge");
+var cartBadge = document.getElementsByClassName("badge");
 var cartBottom = document.getElementById("cartBottom");
 
 const buttons = cartBottom.querySelectorAll("button");
@@ -33,8 +32,8 @@ function clearStorage() {
     localStorage.clear();
     location.reload();
 }
-cartBadge.innerHTML = cart.length
-
+cartBadge[0].innerHTML = cart.length
+cartBadge[1].innerHTML = cart.length
 
 async function addToCart(productId, e) {
     e.preventDefault();
@@ -49,6 +48,7 @@ async function addToCart(productId, e) {
     const price = parseFloat(productDetails[0].price);
     const image = productDetails[0].image;
     const existingItem = cart.find(item => item.id === productId);
+    ShowToast(name)
 
     if (existingItem) {
         existingItem.quantity += 1;
@@ -62,7 +62,8 @@ async function addToCart(productId, e) {
     updateCartDisplay();
     DiableButtons();
     updateLocalStorage();
-    cartBadge.innerHTML = cart.length;
+    cartBadge[0].innerHTML = cart.length
+    cartBadge[1].innerHTML = cart.length
     // ckBtn.disabled = false;
 }
 
@@ -94,8 +95,8 @@ function updateCartDisplay() {
 
     // Update total price
     totalPrice.textContent = total.toFixed(2);
-
-    cartBadge.innerHTML = cart.length
+    cartBadge[0].innerHTML = cart.length
+    cartBadge[1].innerHTML = cart.length
     DiableButtons();
 }
 
@@ -150,3 +151,11 @@ function updateLocalStorage() {
 }
 
 
+function ShowToast(name) {
+    document.getElementById('errortip').style.display = 'block';
+    document.getElementById('toast-body').innerHTML = `<strong>${name} Has been added to your cart</strong>`;
+    setTimeout(function () {
+        document.getElementById('errortip').style.display = 'none';
+
+    }, 2000)
+}

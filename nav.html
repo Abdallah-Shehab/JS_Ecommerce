@@ -18,27 +18,30 @@
     <script src="./js/smooth.js"></script>
   </head>
   <body>
-    <button
-      class="top-buuton"
-      id="btn"
-      onclick="topFunction()"
-      title="TopButton"
-    >
-      <i class="fa-solid fa-plane-up"></i>
-    </button>
-    <button
-      type="button"
-      id="FloatCartBuuton"
-      onclick="OpenCart()"
-      class="btn btn-outline-primary FloatCartBuuton"
-    >
-      <i class="fa-solid fa-cart-shopping"></i>
-      <span
-        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-        class="badge"
+    <div class="abs_container">
+      <button
+        type="button"
+        id="FloatCartBuuton"
+        onclick="OpenCart()"
+        class="btn btn-outline-primary FloatCartBuuton"
       >
-      </span>
-    </button>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+          class="badge"
+        >
+        </span>
+      </button>
+      <button
+        class="top-buuton"
+        id="btn"
+        onclick="topFunction()"
+        title="TopButton"
+      >
+        <i class="fa-solid fa-plane-up"></i>
+      </button>
+    </div>
+
     <div class="cart" id="cart">
       <button
         type="button"
@@ -84,14 +87,7 @@
     >
       <div class="container-fluid">
         <a href="./index.html" class="navbar-brand">
-          <i
-            class="fa-solid fa-shop"
-            style="color: white; font-size: 40px; margin-left: 30px"
-          >
-            <span style="color: white; font-size: 30px; margin-left: 15px"
-              >Tech-Store</span
-            ></i
-          >
+          <i class="fa-solid fa-shop"> Tech-Store</i>
           <!-- <img class="mx-lg-5" src="./images/logo.png" alt="" /> -->
         </a>
 
@@ -106,7 +102,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Products.html">Products</a>
+              <a class="nav-link" href="./Products.html">Store</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="index.html#about">About Us</a>

@@ -4,9 +4,27 @@ let stock = []
 let con = document.getElementById("container")
 let butt_con = document.getElementById("butt-container")
 let Stock_butt_container = document.getElementById("Stock-butt-container")
+let loader = document.getElementById("loader");
 
 
 console.log(con);
+
+function checkIfDivLoaded() {
+  console.log("The <div> content has finished loading!");
+  // You can perform other actions here once the <div> is fully loaded.
+}
+
+if (document.readyState === "loading") {
+  // The document is still loading
+  document.addEventListener("DOMContentLoaded", checkIfDivLoaded);
+  console.log("Not yet");
+  // loader.style.display = "block";
+  loader.style.display = "block";
+
+} else {
+  // The document has already finished loading
+  checkIfDivLoaded();
+}
 async function getProducts() {
   // let response = await fetch("http://localhost:3000/products")
   let response = await fetch("https://productsapi-sigma.vercel.app/products")

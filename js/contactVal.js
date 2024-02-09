@@ -41,4 +41,8 @@ function validateForm() {
     // If all validations pass, show success message (you can submit the form to a server here)
     document.getElementById('contactForm').style.display = 'none';
     document.getElementById('successMessage').style.display = 'block';
+    setTimeout(function () {
+
+        location.reload();
+    }, 2000);
 }
